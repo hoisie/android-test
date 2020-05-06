@@ -30,6 +30,7 @@ rules_proto_dependencies()
 rules_proto_toolchains()
 
 # javalite toolchain is only available in javalite branch and there's no release tags in javalite
+# This is required to build with Bazel 2.x and below.
 http_archive(
     name = "com_google_protobuf_javalite",
     sha256 = "a8cb9b8db16aff743a4bc8193abec96cf6ac0b0bc027121366b43ae8870f6fd3",
